@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MuTube - The ultimate modern offline desktop media player." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta property="og:title" content="MuTube - Your Entire Media Universe. Offline." />
+  <meta property="og:description" content="Premium desktop media player for power users. Music + Video. Offline. Free & Open Source." />
+  <title>MuTube - Your Entire Media Universe. Offline.</title>
+  <link rel="stylesheet" href="./dist/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+<body class="bg-bg-dark text-white overflow-x-hidden font-sans">
+  <div class="animated-bg"></div>
+  <div class="bg-gradient-animated"></div>
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+
+  <nav>
+    <div class="nav-content">
+      <div class="logo"><span class="logo-brand">Mu</span><span class="logo-highlight">Tube</span></div>
+      <div class="nav-links">
+        <a href="#showcase">Gallery</a>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sticky-cta" id="stickyCta">
+    <button class="btn btn-primary" onclick="downloadApp()">
+      <span>↓</span>
+      Download Now
+    </button>
+  </div>
+
+  <section class="hero" id="showcase">
+    <div class="hero-floating-elements">
+      <div class="floating-element glass"></div>
+      <div class="floating-element glass"></div>
+      <div class="floating-element glass"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="animate-in">Your entire media<br />universe. <span class="text-primary">Offline.</span></h1>
+      <p class="animate-in">
+        The ultimate modern desktop media player. Music + video, offline-first, privacy-focused. Built for power users.
+      </p>
+
+      <div class="hero-buttons animate-in">
+        <button class="btn btn-primary" onclick="downloadApp()">
+          <span>↓</span>
+          Download for Windows
+        </button>
+        <button class="btn btn-secondary" onclick="window.open('https://github.com', '_blank')">
+          <span>★</span>
+          View on GitHub
+        </button>
+      </div>
+
+      <div class="hero-trust animate-in">
+        <div class="trust-badge">✓ 100% Open Source</div>
+        <div class="trust-badge">✓ Offline First</div>
+        <div class="trust-badge">✓ No Tracking</div>
+        <div class="trust-badge">✓ Free Forever</div>
+      </div>
+
+      <div class="hero-preview animate-in">
+        <div class="preview-frame glow-red">
+          <div class="app-mockup">
+            <div class="sidebar">
+              <div class="sidebar-logo">MuTube</div>
+              <div class="sidebar-nav">
+                <div class="nav-item active">🎵 Music</div>
+                <div class="nav-item">🎬 Videos</div>
+                <div class="nav-item">⭐ Favorites</div>
+                <div class="nav-item">📁 Library</div>
+              </div>
+              <div class="sidebar-playlists">
+                Playlists
+                <div class="playlist-item">Chill Vibes</div>
+                <div class="playlist-item">Workout Mix</div>
+                <div class="playlist-item">Study Focus</div>
+              </div>
+            </div>
+
+            <div class="player-main">
+              <div class="now-playing-section">
+                <div class="album-art">🎵</div>
+                <div class="now-playing-info">
+                  <div class="song-title">Midnight Dreams</div>
+                  <div class="artist-name">Luna Wave</div>
+                </div>
+              </div>
+              <div class="progress-section">
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="time-display"><span>2:34</span><span>5:12</span></div>
+              </div>
+              <div class="player-controls">
+                <div class="control-btn">⏮</div>
+                <div class="control-btn">⏯</div>
+                <div class="control-btn">⏭</div>
+              </div>
+            </div>
+
+            <div class="queue-panel">
+              <div class="queue-header">Next Up</div>
+              <div class="queue-items">
+                <div class="queue-item playing">🎵 Midnight Dreams</div>
+                <div class="queue-item">🎵 Electric Soul</div>
+                <div class="queue-item">🎵 Ocean Waves</div>
+                <div class="queue-item">🎵 Neon Lights</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="credibility-section">
+    <div class="section-header">
+      <h2>Trusted by Power Users</h2>
+    </div>
+    <div class="credibility-grid">
+      <div class="credibility-card glass scroll-reveal">
+        <div class="credibility-number">10K+</div>
+        <div class="credibility-label">Files Handled</div>
+      </div>
+      <div class="credibility-card glass scroll-reveal">
+        <div class="credibility-number">4K</div>
+        <div class="credibility-label">Video Playback</div>
+      </div>
+      <div class="credibility-card glass scroll-reveal">
+        <div class="credibility-number">&lt;100ms</div>
+        <div class="credibility-label">Index Speed</div>
+      </div>
+      <div class="credibility-card glass scroll-reveal">
+        <div class="credibility-number">0%</div>
+        <div class="credibility-label">Tracking</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story-section">
+    <div class="story-content scroll-reveal">
+      <h2 class="story-headline">Modern media players forgot the people who own media.</h2>
+      <p class="story-body">
+        We live in a world obsessed with streaming, but you own your music. Your videos. Your memories. You shouldn't need an internet connection or a subscription to enjoy them.
+      </p>
+      <div class="story-points">
+        <div class="story-point glass scroll-reveal">
+          <div class="story-point-icon">🌍</div>
+          <div class="story-point-title">Streaming Fatigue</div>
+          <div class="story-point-text">Tired of endless browsing? Own your media instead.</div>
+        </div>
+        <div class="story-point glass scroll-reveal">
+          <div class="story-point-icon">🔐</div>
+          <div class="story-point-title">Privacy Matters</div>
+          <div class="story-point-text">No tracking. No algorithms. Just you and your music.</div>
+        </div>
+        <div class="story-point glass scroll-reveal">
+          <div class="story-point-icon">📱</div>
+          <div class="story-point-title">Offline Freedom</div>
+          <div class="story-point-text">Listen anywhere. Mountain cabin, airplane, anywhere.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel-section">
+    <div class="section-header">
+      <h2>Experience MuTube</h2>
+      <p>Scroll through our intuitive interface and discover all the features you need.</p>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-content">
+        <div class="carousel-frame glass glow-hover"><div class="carousel-frame-inner"><div class="carousel-label">🎵</div><div class="carousel-title">Music Player</div></div></div>
+        <div class="carousel-frame glass glow-hover"><div class="carousel-frame-inner"><div class="carousel-label">🎬</div><div class="carousel-title">Video Playback</div></div></div>
+        <div class="carousel-frame glass glow-hover"><div class="carousel-frame-inner"><div class="carousel-label">📋</div><div class="carousel-title">Smart Playlists</div></div></div>
+        <div class="carousel-frame glass glow-hover"><div class="carousel-frame-inner"><div class="carousel-label">🎨</div><div class="carousel-title">Theme Editor</div></div></div>
+        <div class="carousel-frame glass glow-hover"><div class="carousel-frame-inner"><div class="carousel-label">📁</div><div class="carousel-title">Folder Upload</div></div></div>
+        <div class="carousel-frame glass glow-hover"><div class="carousel-frame-inner"><div class="carousel-label">⚙️</div><div class="carousel-title">Queue System</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section" id="features">
+    <div class="section-header">
+      <h2>Packed with Possibilities</h2>
+      <p>Everything you need for the perfect offline media experience.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card glass scroll-reveal"><div class="feature-icon">⚡</div><div class="feature-title">Lightning Fast</div><div class="feature-description">Instant playback with optimized local indexing. No lag, no buffering, no waiting.</div></div>
+      <div class="feature-card glass scroll-reveal"><div class="feature-icon">🖱️</div><div class="feature-title">Drag & Drop</div><div class="feature-description">Simply drag your music and videos into MuTube. Organizing is effortless.</div></div>
+      <div class="feature-card glass scroll-reveal"><div class="feature-icon">🎯</div><div class="feature-title">Smart Playlists</div><div class="feature-description">Create and manage playlists with intuitive controls and seamless organization.</div></div>
+      <div class="feature-card glass scroll-reveal"><div class="feature-icon">🎬</div><div class="feature-title">Full Video Support</div><div class="feature-description">Play your favorite videos in crystal clear quality with advanced controls.</div></div>
+      <div class="feature-card glass scroll-reveal"><div class="feature-icon">💾</div><div class="feature-title">100% Offline</div><div class="feature-description">No internet? No problem. Your entire library is available anytime, anywhere.</div></div>
+      <div class="feature-card glass scroll-reveal"><div class="feature-icon">🎨</div><div class="feature-title">Fully Themable</div><div class="feature-description">Customize every color, font, and element. Make it completely yours.</div></div>
+      <div class="feature-card glass scroll-reveal"><div class="feature-icon">🔊</div><div class="feature-title">Flawless Playback</div><div class="feature-description">Crystal clear audio with perfect synchronization and zero stuttering.</div></div>
+      <div class="feature-card glass scroll-reveal"><div class="feature-icon">🖥️</div><div class="feature-title">Native Desktop App</div><div class="feature-description">True desktop application. Lightweight, responsive, and incredibly powerful.</div></div>
+      <div class="feature-card glass scroll-reveal"><div class="feature-icon">⌨️</div><div class="feature-title">Keyboard Controls</div><div class="feature-description">Full keyboard support for power users. Control everything without your mouse.</div></div>
+    </div>
+  </section>
+
+  <section class="install-section">
+    <div class="section-header">
+      <h2>Getting Started is Easy</h2>
+      <p>Setup MuTube in under 30 seconds.</p>
+    </div>
+    <div class="install-timeline">
+      <div class="install-step scroll-reveal"><div class="step-number">1</div><div class="step-content"><div class="step-title">Download</div><div class="step-description">Click the download button and get the .exe file. No account needed.</div></div></div>
+      <div class="install-step scroll-reveal"><div class="step-number">2</div><div class="step-content"><div class="step-title">Open</div><div class="step-description">Run the installer and MuTube launches instantly. Less than 10 seconds.</div></div></div>
+      <div class="install-step scroll-reveal"><div class="step-number">3</div><div class="step-content"><div class="step-title">Import Media</div><div class="step-description">Drag your music and videos in. That's it. Start enjoying immediately.</div></div></div>
+    </div>
+  </section>
+
+  <section class="platform-section">
+    <div class="section-header">
+      <h2>Platform Support</h2>
+      <p>Currently available on Windows. More platforms coming soon.</p>
+    </div>
+    <div class="platform-grid">
+      <div class="platform-card glass available scroll-reveal"><div class="platform-icon">🪟</div><div class="platform-name">Windows</div><div class="platform-status">Available Now</div></div>
+      <div class="platform-card glass coming scroll-reveal"><div class="platform-icon">🍎</div><div class="platform-name">macOS</div><div class="platform-status">Coming Soon</div></div>
+      <div class="platform-card glass coming scroll-reveal"><div class="platform-icon">🐧</div><div class="platform-name">Linux</div><div class="platform-status">Coming Soon</div></div>
+    </div>
+  </section>
+
+  <section class="download-section" id="download">
+    <div class="download-content">
+      <h2 class="download-title">Ready to reclaim<br />your media?</h2>
+      <div class="download-urgency">⚡ Setup in under 30 seconds. No account required.</div>
+      <div class="download-badges">
+        <div class="badge"><span>🪟</span><span>Windows 10+</span></div>
+        <div class="badge"><span>📦</span><span>v1.0.0</span></div>
+        <div class="badge"><span>💾</span><span>45 MB</span></div>
+        <div class="badge"><span>🆓</span><span>Free & Open Source</span></div>
+      </div>
+      <div class="download-button">
+        <button class="btn btn-primary" onclick="downloadApp()">
+          <span>↓</span>
+          Download MuTube for Windows
+        </button>
+      </div>
+      <div class="download-info">
+        <div>✓ No installation hassle</div>
+        <div>✓ 100% Safe & Verified</div>
+        <div>✓ Instant Setup</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section"><h3>MuTube</h3><div class="footer-links"><a href="#download">Download</a><a href="#features">Features</a><a href="#showcase">Gallery</a></div></div>
+      <div class="footer-section"><h3>Project</h3><div class="footer-links"><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a><a href="https://github.com" target="_blank" rel="noreferrer">Open Source</a><a href="https://github.com" target="_blank" rel="noreferrer">Contribute</a></div></div>
+      <div class="footer-section"><h3>Legal</h3><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">MIT License</a></div></div>
+    </div>
+    <div class="footer-bottom"><div>© 2024 MuTube. Built with passion for media lovers everywhere.</div><div>Open Source • MIT License • Always Free</div></div>
+  </footer>
+</body>
+</html>

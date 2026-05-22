@@ -1,0 +1,5 @@
+# Ignore build and binary files
+MuTube Setup 1.0.0.exe
+/dist/
+node_modules/
+.DS_Store
